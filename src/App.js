@@ -5,6 +5,7 @@ import React, { useContext, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import DataTablePage from "./DataTablePage";
+import Dynamic from "./Dynamic";
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/data-table" element={<DataTablePage />} />
-          <Route path="/:placeholder" element={<></>} />
+          <Route path="/:placeholder" element={<Dynamic />} git />
         </Routes>
       </BrowserRouter>
     </AuthContext>
